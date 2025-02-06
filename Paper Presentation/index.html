@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upagraha'25</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar" >
+        <div class="nav-content">
+            <div class="nav-logo">
+                <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="calendar-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>TechSymposium 2024</span>-->       
+                <img src="main-logo2.png" id="iete_logo"  width="120" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="calendar-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10">
+                </div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#rules" class="nav-link">Rules</a>
+                <a href="#venue" class="nav-link">Venue</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="../index.html" class="mobile-link" onclick="toggleMenu()">Home</a>
+        <a href="#about" class="mobile-link" onclick="toggleMenu()">About</a>
+        <a href="#rules" class="mobile-link" onclick="toggleMenu()">Rules</a>
+        <a href="#venue" class="mobile-link" onclick="toggleMenu()">Venue</a>
+        <a href="#contact" class="mobile-link" onclick="toggleMenu()">Contact</a>
+        <br>
+        <a href="#" class="mobile-link" onclick="toggleMenu()"></a>
+    </div>
+
+    <!-- Background Video -->
+    <div class="video-background">
+        <div class="overlay"></div>
+        <video autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80">
+            <source src="bg vid.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" data-aos="fade-up">
+            <h1>TechThesis</h1>
+            <p class="subtitle">(PAPER PRESENTATION)</p>
+            <h2>REGISTRATION CLOSES ON</h2>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <span>Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <span>Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <span>Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <span>Seconds</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section" data-aos="fade-up">
+            <h2>About the Event</h2>
+            <div class="content-card">
+                <p>Unleash your innovation and technical ideas  in the Paper Presentation event at Upagraha 2025!
+                     This event offers a platform for students and researchers to showcase their cutting-edge ideas,
+                      research findings, and innovative solutions in the field of 
+                    Electronics and Communication Engineering and related domains.</p>
+            </div>   
+
+            <br>
+            <h2>Round 1:</h2>         
+            <div class="content-card">
+                <p>  Participants are required to submit an abstract of their 
+                    paper for initial evaluation. Only shortlisted abstracts 
+                    will advance to the next round for paper presentation.
+                     Teams must submit their full 
+                    paper prior to the event, adhering to the IEEE format.</p>
+            </div>
+            <h2>Round 2:</h2>         
+            <div class="content-card">
+                <p>  Participants are required to present their paper before
+                     a panel of judges. Each presentation will be allotted
+                      10 minutes, followed by a 3-minute Q&A session. 
+                      The final results will be based on the judges' decision.</p>
+            </div>
+
+        </section>
+
+        <section id="about" class="section" data-aos="fade-up">
+            <h2>Domains</h2>
+            <div class="content-card">
+                <!-- <p>Unleash your innovation and technical ideas  in the Paper Presentation event at Upagraha 2025!
+                     This event offers a platform for students and researchers to showcase their cutting-edge ideas,
+                      research findings, and innovative solutions in the field of 
+                    Electronics and Communication Engineering and related domains.</p>-->
+                    <div class="features">
+                        <div class="feature">
+                            <!--<svg xmlns="" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>-->
+                            <img src="VLSI.png"width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            <h3>VLSI design </h3>
+                            <p>Connect with industry leaders</p>
+                        </div>
+                        <div class="feature">
+                            <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>-->
+                            <img  src="Machine-Learning.png" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                            <h3>Machine learning </h3>
+                            <p>Interactive learning sessions</p>
+                        </div>
+                        <div class="feature">
+                            <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>-->
+                            <img src="Internet-Of-Things.png" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            <h3>Internet of things </h3>
+                            <p>Engage with experts</p>
+                        </div>
+                        <div class="feature">
+                            <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>-->
+                            <img src="antenna.png" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            <h3> Antenna Design and application </h3>
+                            <p>Connect with industry leaders</p>
+                        </div>
+                        <div class="feature">
+                            <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>-->
+                            <img src="sound-waves-.webp" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                            <h3>Signal processing and Communication</h3>
+                            <p>Interactive learning sessions</p>
+                        </div>
+                        <div class="feature">
+                            <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>-->
+                            <img src="fiber-optic.png" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            <h3>Optical communication</h3>
+                            <p>Engage with experts</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+
+        <!-- Rules Section -->
+        <section id="rules" class="section" data-aos="fade-up">
+            <h2>Event Rules</h2>
+            <div class="content-card">
+                <div class="rules-list">
+                    <div class="rule">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span>Team Size: 2 - 3 members max.</span>
+                    </div>
+                    <div class="rule">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span>All participants must register before the event deadline</span>
+                    </div>
+                    <div class="rule">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span>Participants should arrive 30 minutes before their scheduled session</span>
+                    </div>
+                    <div class="rule">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span>Professional conduct is expected throughout the event</span>
+                    </div>
+                    <div class="rule">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span>Recording of sessions is prohibited without prior permission</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Details Grid -->
+        <div class="grid-section">
+            <!-- Timing & Venue -->
+            <section id="venue" class="section" data-aos="fade-right">
+                <h2>Event Details</h2>
+                <div class="content-card">
+                    <div class="details">
+                        <div class="detail-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <div>
+                                <h3>Date & Time</h3>
+                                <p>February 22, 2025 | 10:00 AM - 2:30 PM</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="detail-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <div>
+                                <h3>Venue</h3>
+                                <p>Microcontroller lab,</p>
+                                <p>AIC lab</p>
+                                <p>Circuit theroy lab</p>
+                                <p>Seminar hall near Hod room</p>
+                                <p>ECE - Department, SVCE.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <!--<div class="detail-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <div>
+                                <h3>Capacity</h3>
+                                <p>Limited to 15 participants</p>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Event Coordinator -->
+            <section id="contact" class="section" data-aos="fade-left">
+                <h2>Organizers</h2>
+                <div class="content-card coordinator">
+                    <img src="crew pic/SRIMATHI R.png" alt="Event Coordinator" class="coordinator-img">
+                    <div class="coordinator-info">
+                        <h3>SRIMATHI R</h3>
+                        <p class="coordinator-title">Event Coordinator</p>
+                        <!--<div class="contact-info">
+                            <a href="mailto:sarah@techsymposium.com" class="contact-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                srimathe@svce.ac.in
+                            </a>
+                            <a href="tel:+1234567890" class="contact-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                1234567890
+                            </a>
+                        </div>-->
+                    </div>
+                </div>
+                <br>
+                <div class="content-card coordinator">
+                    <img src="crew pic/MANOJ KUMAR K.jpg" alt="Event Coordinator" class="coordinator-img">
+                    <div class="coordinator-info">
+                        <h3>MANOJ KUMAR K</h3>
+                        <p class="coordinator-title">Event Coordinator</p>
+                       
+                    </div>
+                </div>
+                <br>
+                <div class="content-card coordinator">
+                    <img src="crew pic/ADARSH S.png" alt="Event Coordinator" class="coordinator-img">
+                    <div class="coordinator-info">
+                        <h3>ADARSH S</h3>
+                        <p class="coordinator-title">Event Coordinator</p>
+                  
+                    </div>
+                </div>
+                <br>
+                <div class="content-card coordinator">
+                    <img src="crew pic/SUBASRI J.png" alt="Event Coordinator" class="coordinator-img">
+                    <div class="coordinator-info">
+                        <h3>SUBASRI J</h3>
+                        <p class="coordinator-title">Event Coordinator</p>
+        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Registration Section -->
+        <section class="registration-section" data-aos="fade-up">
+            <div class="content-card">
+                <h2>Join Us at upagraha-25</h2>
+                <p>Don't miss this opportunity to be part of the future of technology</p>
+                <button class="register-btn" onclick="showRegistrationModal()">
+                    Register Now
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Registration Modal 
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Register for TechSymposium 2024</h2>
+            <form id="registrationForm" onsubmit="handleRegistration(event)">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="organization">Organization</label>
+                    <input type="text" id="organization" required>
+                </div>
+                <button type="submit" class="register-btn">Submit Registration</button>
+            </form>
+        </div>
+    </div>-->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4" id="contact">
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" id="footed">
+              <h5
+                class="text-uppercase mb-4 font-weight-bold"
+                style="color:whitesmoke"
+                id="contacted">
+                Upagraha'25
+              </h5>
+              <p id="foot-content">
+                <span>Sri Venkateswara College of Engineering</span><br />
+                Post Bag No.1,Pennalur Village <br />Chennai - Bengaluru High Road
+                <br />Sriperumbudur Tk, Tamil Nadu 602117<br /><br />
+                <span
+                  >Phone:<a href="tel:63809 89594">63809 89594</a><br />Yaaminy
+                  (Secretary)</span>
+                  <span
+                  >Phone:<a href="tel:63809 89594">79045 34316</a><br />Vasantha Vidhya P V
+                  (Treasurer)</span>
+                <br />
+                <span>Email:
+                  <a href="mailto:ecea@svce.ac.in">ecea@svce.ac.in</a></span
+                >
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5
+                class="text-uppercase mb-4 font-weight-bold"
+                style="color:whitesmoke"
+              >
+                LINKS
+              </h5>
+              <p>
+                <a href="#" class="text-white" style="text-decoration: none"
+                  >Home</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#about"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >About</a
+                >
+              </p>
+              <p>
+                <a href="#Timeline" class="text-white" style="text-decoration: none"
+                  >Timeline</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#Schedule"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Schedule</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#Events"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Our Events</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#contact"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Contact</a
+                >
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3" id="fet">
+              <h5
+                class="text-uppercase mb-4 font-weight-bold"
+                style="color:whitesmoke"
+              >
+                CONNECT WITH US
+              </h5>
+              <div id="svg-icon">
+              <a href="https://www.instagram.com/eceasvce/?igshid=YmMyMTA2M2Y%3D"
+                > <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+             </a>
+              <a href="https://in.linkedin.com/company/ecea-svce"
+                ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+        </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.732642346902!2d79.96767497580335!3d12.988944514496236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528cd0cfb6e7ab%3A0x3294da3faad96a9!2sSri%20Venkateswara%20College%20of%20Engineering%20(SVCE)!5e0!3m2!1sen!2sin!4v1694347794223!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div id="copyright">
+            <p class="copyright">Upagraha'25 @ All Rights Reserved</p>
+            <p class="copyright">&lt;/&gt; With ❤️ by ECE Web Team</p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
