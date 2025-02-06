@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=0.8"
+    />
+    <title>Hold Up!</title>
+    <link rel="stylesheet" href="../newstyles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="../main-logo2.png">
+  </head>
+  <body>
+     <!-- Navigation -->
+     <nav id="navbar" class="navbar" >
+        <div class="nav-content">
+            <div class="nav-logo">       
+                <img src="../main-logo2.png" id="iete_logo"  width="120" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="calendar-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10">
+                </div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div id="Menu" class="nav-links">
+                <a href="#home" class="nav-link" >Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#Timeline" class="nav-link">Timeline</a>
+                <a href="#Schedule" class="nav-link">Schedule</a>
+                <a href="#Events" class="nav-link">Events</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#home" class="mobile-link " onclick="toggleMenu()">Home</a>
+        <a href="#about" class="mobile-link" onclick="toggleMenu()">About</a>
+        <a href="#Timeline" class="mobile-link" onclick="toggleMenu()">Timeline</a>
+        <a href="#Schedule" class="mobile-link" onclick="toggleMenu()">Schedule</a>
+        <a href="#Events" class="mobile-link" onclick="toggleMenu()">Events</a>
+        <a href="#contact" class="mobile-link" onclick="toggleMenu()">Contact</a>
+        <br>
+        <a href="#" class="mobile-link" onclick="toggleMenu()"></a>
+    </div>
+
+    <!-- Background Video -->
+    <div class="video-background">
+        <div class="overlay"></div>
+        <video autoplay loop muted playsinline >
+            <source src="../videoplayback.webm" type="video/webm">
+        </video>
+    </div>
+
+    <main id="home">
+        <!-- Hero Section -->
+        <section class="hero" data-aos="fade-up" style="margin-top: 100px;">
+          <br>
+            <div class="main-logo"
+            ><img src="../main-logo2.png" ></div>
+            <br>
+            <h4 style="font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            color: white;
+            animation: gradient 8s ease infinite;">⏳ Registration? Not Yet, But Soon! 🚀</h1>
+            <br>
+            <br>
+            <p style="font-size: 1.5rem;">Our gates aren’t open yet, but when they do, it’s going to be legendary. Stay tuned! 🎉</p>
+            <br>
+            <p>(P.S. Refreshing this page won’t make it open faster. Trust us, we tried. 😉)</p>
+            <br><br>
+            <h5 id="countdown-header"> Registrations Live in... </h5>
+             <br>
+             <br>
+            <div class="countdown">
+                <div class="launch-time">
+                    <div>
+                      <p id="days1">00</p>
+                      <p>Days</p>
+                    </div>
+                    <div>
+                      <p id="hours1">00</p>
+                      <p>Hours </p>
+                    </div>
+                    <div>
+                      <p id="minutes1">00</p>
+                      <p>Minutes</p>
+                    </div>
+                    <div>
+                      <p id="seconds1">00</p>
+                      <p>Seconds</p>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>function regCountDown() {
+                const eventDate = new Date("February 8, 2025 00:00:00").getTime();
+                const now = new Date().getTime();
+                const distance = eventDate - now;
+              
+                if (distance < 0) {
+                  document.getElementById("countdown").textContent = "Event has started!";
+                  return;
+                }
+              
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              
+                document.getElementById("days1").textContent = String(days).padStart(2, "0");
+                document.getElementById("hours1").textContent = String(hours).padStart(2, "0");
+                document.getElementById("minutes1").textContent = String(minutes).padStart(2, "0");
+                document.getElementById("seconds1").textContent = String(seconds).padStart(2, "0");
+              }
+              
+              // Ensure DOM is fully loaded
+              document.addEventListener("DOMContentLoaded", () => {
+                setInterval(regCountDown, 1000);
+                regCountDown();
+              });</script>
+            <script src="../newscript.js"></script>
+  </body>
+</html>
